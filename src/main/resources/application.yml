@@ -1,0 +1,29 @@
+server:
+  port: 6801
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+spring:
+  profiles:
+    active: dev
+
+
+---
+spring:
+  profiles: test
+
+eureka:
+  instance:
+    hostname: 140.143.227.51
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
