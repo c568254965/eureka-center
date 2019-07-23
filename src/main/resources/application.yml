@@ -14,14 +14,13 @@ spring:
   profiles:
     active: dev
 
-
 ---
 spring:
   profiles: test
 
 eureka:
   instance:
-    hostname: 140.143.227.51
+    hostname: csrr-eureka
   client:
     register-with-eureka: false
     fetch-registry: false
