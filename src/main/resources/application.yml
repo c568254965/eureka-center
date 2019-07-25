@@ -15,9 +15,12 @@ spring:
     active: dev
 
 ---
+server:
+  port: 6801
 spring:
   profiles: test
-
+  application:
+    name: csrr-eureka
 eureka:
   instance:
     hostname: csrr-eureka
@@ -34,6 +37,8 @@ eureka:
 server:
   port: 6802
 spring:
+  application:
+    name: csrr-eureka
   profiles: test2
 eureka:
   instance:
