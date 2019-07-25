@@ -22,7 +22,21 @@ eureka:
   instance:
     hostname: csrr-eureka
   client:
-    register-with-eureka: false
-    fetch-registry: false
+#    register-with-eureka: false
+#    fetch-registry: false
+    service-url:
+      defaultZone: http://csrr-eureka2:6802/eureka
+
+---
+
+server:
+  port: 6802
+spring:
+  profiles: test2
+eureka:
+  instance:
+    hostname: csrr-eureka2    #名称，，注册要用
+  client:
     service-url:
       defaultZone: http://csrr-eureka:6801/eureka
+
