@@ -30,7 +30,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://140.143.227.51:6802/eureka
+      defaultZone: http://140.143.227.51:6802/eureka/
 
 ---
 
@@ -49,5 +49,5 @@ eureka:
     fetch-registry: true
 
     service-url:
-      defaultZone: http://140.143.227.51:6801/eureka
+      defaultZone: http://140.143.227.51:6801/eureka/
 
