@@ -21,9 +21,11 @@ spring:
 eureka:
   instance:
     hostname: csrr-eureka
+    prefer-ip-address: false
+
   client:
     register-with-eureka: true
- #   fetch-registry: false
+    fetch-registry: true
     service-url:
       defaultZone: http://140.143.227.51:6802/eureka
 
@@ -36,8 +38,10 @@ spring:
 eureka:
   instance:
     hostname: csrr-eureka2    #名称，，注册要用
+    prefer-ip-address: false
   client:
     register-with-eureka: true
+    fetch-registry: true
 
     service-url:
       defaultZone: http://140.143.227.51:6801/eureka
