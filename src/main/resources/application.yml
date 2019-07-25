@@ -22,8 +22,8 @@ eureka:
   instance:
     hostname: csrr-eureka
   client:
-#    register-with-eureka: false
-#    fetch-registry: false
+    register-with-eureka: true
+ #   fetch-registry: false
     service-url:
       defaultZone: http://140.143.227.51:6802/eureka
 
@@ -37,6 +37,8 @@ eureka:
   instance:
     hostname: csrr-eureka2    #名称，，注册要用
   client:
+    register-with-eureka: true
+
     service-url:
       defaultZone: http://140.143.227.51:6801/eureka
 
