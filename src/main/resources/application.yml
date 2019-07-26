@@ -30,7 +30,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://csrr-eureka2:6802/eureka/
+      defaultZone: http://140.143.227.51:6802/eureka/
 
 ---
 
@@ -38,7 +38,7 @@ server:
   port: 6802
 spring:
   application:
-    name: csrr-eureka2
+    name: csrr-eureka
   profiles: test2
 eureka:
   instance:
@@ -49,5 +49,5 @@ eureka:
     fetch-registry: true
 
     service-url:
-      defaultZone: http://csrr-eureka:6801/eureka/
+      defaultZone: http://140.143.227.51:6801/eureka/
 
