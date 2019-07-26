@@ -42,7 +42,7 @@ spring:
   profiles: test2
 eureka:
   instance:
-    hostname: csrr-eureka2    #名称，，注册要用
+    hostname: csrr-eureka    #名称，，注册要用
     prefer-ip-address: false
   client:
     register-with-eureka: true
