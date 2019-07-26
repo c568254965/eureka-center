@@ -38,7 +38,7 @@ server:
   port: 6802
 spring:
   application:
-    name: csrr-eureka
+    name: csrr-eureka2
   profiles: test2
 eureka:
   instance:
