@@ -30,7 +30,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://140.143.227.51:6802/eureka/
+      defaultZone: http://csrr-eureka2:6802/eureka/
 
 ---
 
@@ -42,12 +42,12 @@ spring:
   profiles: test2
 eureka:
   instance:
-    hostname: csrr-eureka
+    hostname: csrr-eureka2
     preferIpAddress: true
   client:
     register-with-eureka: true
     fetch-registry: true
 
     service-url:
-      defaultZone: http://140.143.227.51:6801/eureka/
+      defaultZone: http://csrr-eureka:6801/eureka/
 
