@@ -24,7 +24,7 @@ spring:
 eureka:
   instance:
     hostname: csrr-eureka
-    preferIpAddress: false
+    preferIpAddress: true
 
   client:
     register-with-eureka: true
@@ -43,7 +43,7 @@ spring:
 eureka:
   instance:
     hostname: csrr-eureka
-    preferIpAddress: false
+    preferIpAddress: true
   client:
     register-with-eureka: true
     fetch-registry: true
