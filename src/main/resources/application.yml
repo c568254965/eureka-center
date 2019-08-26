@@ -30,24 +30,25 @@ eureka:
     register-with-eureka: true
     fetch-registry: false
     service-url:
-      defaultZone: http://csrr-eureka2:6802/eureka/
+      defaultZone: http://csrr-eureka:6801/eureka/
+      # defaultZone: http://csrr-eureka2:6802/eureka/
 
 ---
 
-server:
-  port: 6802
-spring:
-  application:
-    name: csrr-eureka
-  profiles: test2
-eureka:
-  instance:
-    hostname: csrr-eureka2
-    preferIpAddress: false
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-
-    service-url:
-      defaultZone: http://csrr-eureka:6801/eureka/
+#server:
+#  port: 6802
+#spring:
+#  application:
+#    name: csrr-eureka
+#  profiles: test2
+#eureka:
+#  instance:
+#    hostname: csrr-eureka2
+#    preferIpAddress: false
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#
+#    service-url:
+#      defaultZone: http://csrr-eureka:6801/eureka/
 
