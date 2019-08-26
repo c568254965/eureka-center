@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: eureka-service
+  namespace: local
+spec:
+  type: NodeType
+  ports:
+       - port: 6801
+         targetport: 6801
+  selector:
+    app: eureka-server
