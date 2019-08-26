@@ -4,7 +4,7 @@ metadata:
   name: eureka-service
   namespace: local
 spec:
-  type: NodeType
+  type: NodePort
   ports:
        - port: 6801
          targetport: 6801
