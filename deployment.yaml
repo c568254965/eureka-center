@@ -12,7 +12,7 @@ spec:
     spec:
      containers:
      - name: eureka-server
-       image: c568254965/eureka-center:v1.0
+       image: c568254965/eureka-center:v1.1
        tty: true
        ports:
        - containerPort: 6801
