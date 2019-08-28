@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 git pull
 mvn clean package -Dmaven.test.skip=true
 docker rm -f eureka-center
