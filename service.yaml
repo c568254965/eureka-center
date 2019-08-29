@@ -8,5 +8,6 @@ spec:
   ports:
        - port: 6801
          targetPort: 6801
+         nodePort: 31801
   selector:
     app: eureka-server
