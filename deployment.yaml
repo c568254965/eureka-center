@@ -13,6 +13,7 @@ spec:
      containers:
      - name: eureka-server
        image: c568254965/eureka-center:v1.1
+       imagePullPolicy: Always
        tty: true
        ports:
        - containerPort: 6801
