@@ -1,5 +1,5 @@
 server:
-  port: 6801
+  port: 31801
 
 
 eureka:
@@ -16,7 +16,7 @@ spring:
 
 ---
 server:
-  port: 6801
+  port: 31801
 spring:
   profiles: test
   application:
@@ -30,7 +30,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: false
     service-url:
-      defaultZone: http://140.143.227.51:6801/eureka/
+      defaultZone: http://140.143.227.51:31801/eureka/
       # defaultZone: http://csrr-eureka2:6802/eureka/
 
 ---

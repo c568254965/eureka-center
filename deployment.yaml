@@ -3,17 +3,20 @@ kind: Deployment
 metadata:
   name: eureka-server
   namespace: local
+#  labels:
+#    app: xxx
 spec:
   replicas: 1
   template:
     metadata:
-     labels:
-       app: eureka-server
+      labels:
+        app: eureka-server
     spec:
-     containers:
-     - name: eureka-server
+
+      containers:
+       - name: eureka-server
        image: c568254965/eureka-center:v1.1
        imagePullPolicy: Always
        tty: true
        ports:
-       - containerPort: 6801
+       - containerPort: 31801
