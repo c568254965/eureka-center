@@ -12,11 +12,10 @@ spec:
       labels:
         app: eureka-server
     spec:
-
       containers:
-       - name: eureka-server
-       image: c568254965/eureka-center:v1.1
-       imagePullPolicy: Always
-       tty: true
-       ports:
-       - containerPort: 31801
+      - name: eureka-server
+        image: c568254965/eureka-center:v1.1
+        imagePullPolicy: Always
+        tty: true
+        ports:
+        - containerPort: 31801
