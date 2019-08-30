@@ -6,8 +6,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-       - port: 6801
-         targetPort: 6801
+       - port: 31801
+         targetPort: 31801
          nodePort: 31801
   selector:
     app: eureka-server
